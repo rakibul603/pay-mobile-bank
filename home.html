@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Payoo | Login</title>
+    <title>Payoo | Home</title>
     <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
 
     <!-- tailwind+daisy  -->
@@ -31,28 +31,24 @@
 </head>
 
 <body class="min-h-screen max-w-md bg-base-200 mx-auto">
-    <div class="logo w-[200px] mx-auto pt-32">
-        <img src="./assets/Logo-full.png" alt="">
-    </div>
-    <div class="form">
-
-        <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow mx-auto rounded-2xl">
-            <div class="card-body">
-                <fieldset class="fieldset">
-                    <label class="label text-neutral font-bold">Mobile Number</label>
-                    <input id="input-number" maxlength="11" minlength="11" type="text" class="input rounded-full bg-base-200" placeholder="Enter your number" value="01234567890" />
-                    <br>
-                    <label  class="label text-neutral font-bold">4 Digit Pin</label>
-                    <input id="input-password" maxlength="4" type="password" class="input rounded-full bg-base-200" placeholder="Password" />
-                    <button id="login-btn" class="btn btn-primary rounded-full mt-4">Login</button>
-                </fieldset>
+    <header class="border-b-2 border-gray-300">
+        <section class="w-11/12 mx-auto py-3 flex justify-between items-center">
+            <div class="left flex gap-1">
+                <div class="logo w-[60px]">
+                    <img src="./assets/logo.png" alt="">
+                </div>
+                <div class="balance-info">
+                    <h2 class="text-2xl font-bold">
+                        $<span id="balance">4500</span>
+                    </h2>
+                    <p class="text-neutral/50">Available Balance</p>
+                </div>
             </div>
-        </div>
-    </div>
-    </div>
-    </div>
-
-    <script src="./script/login.js"></script>
+            <div class="right">
+                <a href = "./index.html" class="btn btn-soft"><i class="fa-solid fa-right-from-bracket"></i>Log Uot</a>
+            </div>
+        </section>
+    </header>
 </body>
 
 </html>
